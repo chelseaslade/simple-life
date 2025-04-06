@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: auto;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto 0;
+  background-color: #d1e6ee61;  
+}
+
+.Header h1 {
+  color: rgb(54, 111, 148);
+  font-size: 2.5em;
+  margin: 10px;
+}
+
+.Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+} 
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav a {
+  color: rgb(68, 130, 171);
+  text-decoration: none;
+}
+
+.nav a:visited {
+  color: rgb(68, 130, 171);
+}
+
+.nav a:hover {
+  color: rgb(16, 34, 52);
+}
+
+
+.navList {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  margin: auto 0;
+}
+
+.navList li {
+  display: flex; 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #d1e6ee61;
+  font-size: 14px;  
+}
+
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+} 
+
+#NewGameButton{
+  background-color: rgba(68, 130, 171, 0.486); 
+  border: none;
   color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+#NewGameButton:hover {
+  background-color: rgba(68, 130, 171, 0.8);
+  transition: 0.6s;
+}
+  
+#NewGameButton:active {
+  background-color: rgba(68, 130, 171, 0.8);
+  transform: translateY(4px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.GameDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin: 20px;
+  background-color: rgba(151, 188, 213, 0.486);
+}
+
+.Social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+.Social h3 {
+  color: rgb(54, 111, 148);
+  margin: 10px;
+}
+
+.Social button {
+  background-color: rgba(68, 130, 171, 0.486); 
+  height: 50px;
+  width: 100px;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
 }
