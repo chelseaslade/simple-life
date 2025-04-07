@@ -104,16 +104,6 @@
   transform: translateY(4px);
 }
 
-.GameDisplay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 100%;
-  margin: 20px;
-  background-color: rgba(151, 188, 213, 0.486);
-}
-
 .Social {
   display: flex;
   flex-direction: column;
@@ -146,9 +136,85 @@
 
 .About {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   margin: 20px;
+}
+
+.About h3 {
+  color: rgb(54, 111, 148);
+  margin: 10px;
+}
+
+.GameDisplay {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin: 20px;
+  background-color: rgba(151, 188, 213, 0.486);
+}
+
+.GameDisplay h3 {
+  color: rgb(54, 111, 148);
+  margin: auto;
+}
+.CreatePersonForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+.CreatePersonForm input {
+  margin: 5px;
+  height: 20px;
+  width: 200px;
+}
+
+.CreatePersonForm button {
+  background-color: rgba(68, 130, 171, 0.486); 
+  height: 40px;
+  width: 200px;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.CreatedPerson {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.CreatedPerson p {
+  color: rgb(54, 111, 148);
+  font-weight: 800;
+}
+
+.CreatedPerson ul {
+  list-style: none;
+  padding: 0;
+}
+
+.CreatedPerson li {
+  color: rgb(54, 111, 148);
+  padding: 2px;
 }
