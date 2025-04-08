@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
       <>
-      <div class="container">
+      <div className="container">
       <div className="Home">
         <Link to="/new-game"><button id="NewGameButton">New Game</button></Link>
         </div>

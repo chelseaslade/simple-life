@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { PersonContext } from "../context/PersonContext";
+import AgeUp from "../components/AgeUp";
 
-const GameDisplay = () => {
-    return (
-        <>
-              <div class="container">
-              <div className="Home">
-                <div className="GameDisplay">
-                </div>
-                </div>
-                </div>
-        </>
-    );
-};
+function GameDisplay() {
 
-    export default GameDisplay;
+    const { person } = useContext(PersonContext);
+
+  return (
+    <div className="GameDisplay">
+      <h2>{person.firstName} {person.surname}</h2>
+      <p>Age: {person.age}</p>
+      <AgeUp />
+    </div>
+  );
+}
+
+export default GameDisplay;
