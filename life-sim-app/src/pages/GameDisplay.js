@@ -8,6 +8,7 @@ function GameDisplay() {
     const { person } = useContext(PersonContext);
 
   return (
+    <div className="GameContainer">
     <div className="GameDisplay">
       <h3>{person.firstName} {person.surname}</h3>
       <p>Age: {person.age}</p>
@@ -18,9 +19,13 @@ function GameDisplay() {
       <p>Happiness: {person.happiness}</p>
       <p>Health: {person.health}</p>
       <p>Money: ${person.funds}</p>
-      <p>Education: {person.education}</p>
-      <p>Job: {person.job}</p>
-      <p>Relationship Status: {person.relationshipStatus}</p>
+      <p>Appearance: {person.appearance}</p>
+      <p>Intelligence: {person.intelligence}</p>
+      </div>
+      </div>
+      <div className="GameText">
+        <h3>Gameplay</h3>
+        <p>Test Content</p>
       </div>
 </div>
   );
