@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/simple-life/static/css/main.e25ca19e.css",
+    "main.css": "/simple-life/static/css/main.c1f86782.css",
     "main.js": "/simple-life/static/js/main.e0e859c3.js",
     "index.html": "/simple-life/index.html",
-    "main.e25ca19e.css.map": "/simple-life/static/css/main.e25ca19e.css.map",
+    "main.c1f86782.css.map": "/simple-life/static/css/main.c1f86782.css.map",
     "main.e0e859c3.js.map": "/simple-life/static/js/main.e0e859c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e25ca19e.css",
+    "static/css/main.c1f86782.css",
     "static/js/main.e0e859c3.js"
   ]
 }
