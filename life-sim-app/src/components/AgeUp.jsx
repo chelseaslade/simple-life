@@ -24,7 +24,7 @@ function AgeUp() {
   };
 
   return (
-    <div>
+    <div className="AgeUp">
       <button onClick={ageUpPerson}>Age Up</button>
     </div>
   );

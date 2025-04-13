@@ -21,15 +21,15 @@ function DeleteCharacter() {
     }
 
     return (
-        <div>
-        <h2>End Current Run</h2>
+        <div className="DeleteCharacter">
+        <h3>End Current Run</h3>
         <button onClick={() => {
             navigate("/new-game");  
             deleteCharacter();  
         }}>
-            Delete Character
+            Delete
         </button>
-    </div>
+        </div>
     );
 }
 
