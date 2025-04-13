@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 
 import Header from "./components/Header"; 
@@ -14,6 +14,7 @@ import GameDisplay from "./pages/GameDisplay";
 function App() {
   return (
     <PersonProvider>
+      <Router basename="/simple-life">
     <div className="container">
     <Header />
     <Routes>
@@ -26,6 +27,7 @@ function App() {
     </Routes>
     <Footer />
   </div>
+  </Router>
   </PersonProvider>
   );
 }
