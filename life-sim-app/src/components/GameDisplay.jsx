@@ -13,14 +13,7 @@ function GameDisplay() {
         `Welcome to the world, ${person.firstName}! Every life is unique, and we're about to follow along on your journey.`
       ]);
     }
-  }, [person?.id, gameLog.length]);
-
-  if (person.age == 5) {
-    setGameLog((prevLog) => [
-      ...prevLog,
-      `You are now 5 years old, ${person.firstName}.`
-    ]);
-  }
+  }, [person, gameLog.length]);
 
   if (!person) {
     return <p>Loading character...</p>;
