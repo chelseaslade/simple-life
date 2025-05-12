@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Social from "./pages/Social"; 
 import NewGame from "./pages/NewGame";
-import GameDisplay from "./pages/GameDisplay";
+import GameDisplay from "./components/GameDisplay"; // Import the GameDisplay component
 
 function App() {
 
