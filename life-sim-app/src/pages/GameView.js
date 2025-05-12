@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
-import { PersonContext } from "../context/PersonContext";
+
 import AgeUp from "../components/AgeUp";
 import DeleteCharacter from "../components/DeleteCharacter";
+import { PersonContext } from "../context/PersonContext";
+import { useContext } from "react";
 
-function GameDisplay() {
+function GameView({gameLog = []}) {
+  const { person } = useContext(PersonContext);
+  console.log("GameLog in GameView:", gameLog);
 
-    const { person } = useContext(PersonContext);
 
   return (
     <div className="GameContainer">
@@ -25,10 +27,14 @@ function GameDisplay() {
       </div>
       <div className="GameText">
         <h3>Gameplay</h3>
-        <p>Test Content</p>
+        <div className="ChatLog">
+          {gameLog.map((log, index) => (
+            <p key={index}>{log}</p>
+          ))}
+        </div>
       </div>
 </div>
   );
 }
 
-export default GameDisplay;
+export default GameView;

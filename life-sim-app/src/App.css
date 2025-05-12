@@ -251,7 +251,13 @@ body {
   margin-bottom: 3px;
 }
 
-.GameText{
+.GameText {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,6 +269,12 @@ body {
 .GameText h3 {
   color: rgb(54, 111, 148);
   margin: 10px;
+}
+
+.ChatLog {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 
